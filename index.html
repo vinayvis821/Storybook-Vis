@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Comparing difficulty of children's stories</h1>
+    <div class="container pie">
+      <div class="row">
+        <div class="col-sm">
+          <h2 class="subheading" id="title-1">Choose Story</h2>
+          <div class="select-story">
+            <select id="choose-story-one">
+              <option value="none">Select</option>
+              <option value="fish">The Fish and the Ring</option>
+              <option value="fox">Mr. Fox</option>
+              <option value="henny">Henny-Penny</option>
+              <option value="jack">Jack and the Beanstalk</option>
+              <option value="bears">The Story of the Three Bears</option>
+              <option value="pigs">The Story of the Three Little Pigs</option>
+            </select>
+          </div>
+          <div id="pie-chart-one" class="pie-chart"></div>
+        </div>
+        <div class="col-sm">
+          <h2 class="subheading" id="title-2">Choose Story</h2>
+          <div class="select-story">
+            <select id="choose-story-two">
+              <option value="none">Select</option>
+              <option value="fish">The Fish and the Ring</option>
+              <option value="fox">Mr. Fox</option>
+              <option value="henny">Henny-Penny</option>
+              <option value="jack">Jack and the Beanstalk</option>
+              <option value="bears">The Story of the Three Bears</option>
+              <option value="pigs">The Story of the Three Little Pigs</option>
+            </select>
+          </div>
+          <div id="pie-chart-two" class="pie-chart"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container bar-container">
+      <div class="row">
+        <div class="col-sm">
+          <h2 class="subheading">Word Count</h2>
+          <div id="bar-chart" class="bar-chart"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/d3.min.js"></script>
+    <script src="js/sight-words.js"></script>
+    <script src="js/stories.js"></script>
+    <script src="js/pie.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
